@@ -37,4 +37,8 @@ class ViewController: UIViewController {
         self.wheelImage.transform = CGAffineTransform.init(rotationAngle: CGFloat(Double.pi))
         self.wheelImage.transform = CGAffineTransform.init(rotationAngle: CGFloat(0))
     }
+    
+    private func randomFood() {
+        let number = arc4random_uniform(5)
+    }
 }
