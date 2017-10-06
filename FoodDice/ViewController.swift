@@ -30,6 +30,7 @@ class ViewController: UIViewController {
             self.rotateOne()
             self.rotateOne()
         }))
+        self.popUpFood()
     }
     
     //MARK: Private functions
@@ -38,7 +39,16 @@ class ViewController: UIViewController {
         self.wheelImage.transform = CGAffineTransform.init(rotationAngle: CGFloat(0))
     }
     
-    private func randomFood() {
-        let number = arc4random_uniform(5)
+    private func popUpFood() {
+        //let number = arc4random_uniform(5)
+        let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let popUpVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "popUpFood") as! PopUpViewController
+        
+        // Add this popUp to the current controller
+        self.addChildViewController(popUpVC)
+        
+        popUpVC.view.frame = self.view.frame
+        self.view.addSubview(popUpVC.view)
+        popUpVC.didMove(toParentViewController: self)
     }
 }

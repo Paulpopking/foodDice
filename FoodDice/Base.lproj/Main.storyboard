@@ -56,6 +56,51 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="178.53260869565219"/>
         </scene>
+        <!--Pop Up View Controller-->
+        <scene sceneID="VRk-RH-2EO">
+            <objects>
+                <viewController storyboardIdentifier="popUpFood" id="45Y-HM-YXi" customClass="PopUpViewController" customModule="FoodDice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M6a-4V-2fw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3rv-cW-qqc">
+                                <rect key="frame" x="87" y="268" width="240" height="201"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMn-kZ-HMO">
+                                        <rect key="frame" x="103" y="163" width="34" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" red="0.16829977639659188" green="1" blue="0.94176411722696185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.55823185787145801" blue="0.11202171869505606" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="aRF-Sl-crD"/>
+                                    <constraint firstAttribute="height" constant="201" id="aTR-un-0zg"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Srh-20-koh">
+                                <rect key="frame" x="145" y="294" width="124" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3rv-cW-qqc" firstAttribute="centerX" secondItem="M6a-4V-2fw" secondAttribute="centerX" id="H8c-2i-R27"/>
+                            <constraint firstItem="3rv-cW-qqc" firstAttribute="centerY" secondItem="M6a-4V-2fw" secondAttribute="centerY" id="oAg-RU-Bz3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7Z7-PM-JYw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E5h-qY-YhD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914.49275362318849" y="180.16304347826087"/>
+        </scene>
     </scenes>
     <resources>
         <image name="wheel" width="277" height="277"/>

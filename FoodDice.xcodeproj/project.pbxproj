@@ -13,6 +13,7 @@
 		28D587871F8197F800B59A17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28D587861F8197F800B59A17 /* Assets.xcassets */; };
 		28D5878A1F8197F800B59A17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D587881F8197F800B59A17 /* LaunchScreen.storyboard */; };
 		28D587951F8197F800B59A17 /* FoodDiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D587941F8197F800B59A17 /* FoodDiceTests.swift */; };
+		28FC76B81F874F2000074E1D /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FC76B71F874F2000074E1D /* PopUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		28D587901F8197F800B59A17 /* FoodDiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodDiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28D587941F8197F800B59A17 /* FoodDiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDiceTests.swift; sourceTree = "<group>"; };
 		28D587961F8197F800B59A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28FC76B71F874F2000074E1D /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				28D5877F1F8197F800B59A17 /* AppDelegate.swift */,
 				28D587811F8197F800B59A17 /* ViewController.swift */,
 				28D587831F8197F800B59A17 /* Main.storyboard */,
+				28FC76B71F874F2000074E1D /* PopUpViewController.swift */,
 				28D587861F8197F800B59A17 /* Assets.xcassets */,
 				28D587881F8197F800B59A17 /* LaunchScreen.storyboard */,
 				28D5878B1F8197F800B59A17 /* Info.plist */,
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28D587821F8197F800B59A17 /* ViewController.swift in Sources */,
+				28FC76B81F874F2000074E1D /* PopUpViewController.swift in Sources */,
 				28D587801F8197F800B59A17 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
