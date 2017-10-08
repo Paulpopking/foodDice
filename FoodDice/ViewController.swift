@@ -31,7 +31,6 @@ class ViewController: UIViewController {
             self.rotateOne()
         }))
         perform(#selector(popUpFood), with: nil, afterDelay: 3.0)
-        //self.popUpFood()
     }
     
     //MARK: Private functions
@@ -41,7 +40,6 @@ class ViewController: UIViewController {
     }
     
     @objc private func popUpFood() {
-        //let number = arc4random_uniform(5)
         let _ : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let popUpVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "popUpFood") as! PopUpViewController
         

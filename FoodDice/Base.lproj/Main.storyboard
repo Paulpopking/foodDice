@@ -99,6 +99,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7Z7-PM-JYw"/>
                     </view>
+                    <connections>
+                        <outlet property="foodTextField" destination="Srh-20-koh" id="Vmu-Pl-xir"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E5h-qY-YhD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

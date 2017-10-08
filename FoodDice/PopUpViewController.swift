@@ -10,10 +10,15 @@ import UIKit
 
 class PopUpViewController: UIViewController {
 
+    //MARK: Properties
+    @IBOutlet weak var foodTextField: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor.blue.withAlphaComponent(0.8)
+        
+        self.presentFood()
         
         self.showAnimation()
 
@@ -59,5 +64,27 @@ class PopUpViewController: UIViewController {
                 self.view.removeFromSuperview()
             }
         })
+    }
+    
+    private func presentFood() {
+        let food = arc4random_uniform(5)
+        var foodString = ""
+        switch food {
+        case 0:
+            foodString = "Panda Express"
+        case 1:
+            foodString = "Tasty Pot"
+        case 2:
+            foodString = "Noodle Magic"
+        case 3:
+            foodString = "Five Guys"
+        case 4:
+            foodString = "Sushi Ki"
+        default:
+            foodString = "Error"
+        }
+        
+        //Show food name
+        foodTextField.text = foodString
     }
 }
